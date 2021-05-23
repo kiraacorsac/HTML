@@ -1,0 +1,45 @@
+/* p {
+  background-color: lightblue;
+} */
+
+#heading {
+  color: darkred;
+}
+
+
+.blog-post {
+  background-color: blueviolet;
+}
+
+#importantest-square {
+  border: red solid;
+}
+
+.square {
+  width: 0px;
+  height: 0px;
+  /* border: black solid; */
+  /* border-width: 10px 5px 40px 20px; */
+  background-color: aquamarine;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 2px;
+  /* padding: 10px 5px 5px 40px; */
+  /* padding: 10px 40px; */
+}
+
+.absolute-square {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: aqua;
+}
+
+.relative-square {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+

@@ -8,17 +8,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My first website</title> <!-- title that shows up in browsers-->
-  <style>
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- <style>
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
     }
-  </style>
+
+    p {
+      background-color: lightblue;
+    }
+  </style> -->
 </head>
 
 <body>
   <!-- whatever should be displayed, needs to go in here -->
-  <h1>My first website</h1>
+  <h1 id="heading">My first website</h1>
   <h2>Introduction</h2>
   <p> Hello, world!</p> <!-- pagargraph-->
   <p>
@@ -38,7 +43,9 @@
   </p>
   <p>
     <a href="http://google.com/">
-      <img src="assets/images/coo.png" />
+      this links to google!
+      <img width="30px" src="assets/images/coo.png" />
+      this also!
     </a>
   </p>
   <p>
@@ -62,7 +69,7 @@
     <li>Juraj</li>
   </ol>
 
-  <table>
+  <table class="blog-post">
     <thead>
       <tr>
         <th>
@@ -114,14 +121,58 @@
         </td>
       </tr>
       <tr>
-        
+
       </tr>
     </tbody>
   </table>
   </p>
+
+  <p class="blog-post">
+    block-element
+    <em style="color: sandybrown;">inline-element</em>
+  </p>
+
+  <div class="blog-post">
+    <div class="relative-square">
+      relative
+      
+    </div>
+    <div class="absolute-square">
+      text
+    </div>
+    block-elemnt
+    <!-- <p>
+      another line
+    </p> -->
+    <span>
+      inline-elements
+    </span>
+  </div>
+
+  <div id="importantest-square" class="square">
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quod iure maxime aliquam est voluptatem recusandae, expedita nemo vero ab aliquid, impedit unde dicta totam blanditiis accusantium eius, corporis enim. -->
+  </div>
+
+  <!-- <div>
+    <em>
+      text inside
+    </em>
+  </div> -->
+
+  Blah-blah
   <div>
+    Text
+  </div>
+  <div>
+    Text
+  </div>
+  <div>
+    Text
 
   </div>
+
+
+
 </body>
 
 </html>
