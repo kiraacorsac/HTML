@@ -43,3 +43,54 @@
   left: 10px;
 }
 
+
+.static {
+  position: static; /* default*/
+}
+
+.relative {
+  position: relative;
+  bottom: 100px;
+  right: 10px;
+  width: 100px;
+  background-color: red;
+}
+
+.absolute {
+  position: absolute;
+  background-color: blue;
+  bottom: 100px;
+  right: 10px;
+  width: 100px;
+}
+.fixed { 
+  position: fixed;
+  top: 100px;
+  left: 500px;
+  font-size: 50px
+}
+
+.sticky { 
+  position: sticky;
+  top: 100px;
+  left: 500px;
+  font-size: 50px
+}
+
+.header {
+  background: cadetblue;
+  position: sticky;
+  top:0px;
+  bottom: 0px;
+}
+
+.content {
+  width: 400px;
+}
+.bordered {
+  border: 5px solid black;
+  /* border-radius: 100px; */
+  border-radius: 100%;
+  border-bottom-left-radius: 0%;
+  width: 80px;
+}
