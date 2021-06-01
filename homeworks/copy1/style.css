@@ -1,0 +1,48 @@
+.pigeon-image {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  border: solid grey 4px;
+}
+
+
+.container {
+  margin: auto;
+  width: 500px;
+}
+
+.header {
+  background: darkgray;
+  padding: 10px;
+}
+
+.header-text {
+  margin: auto;
+  text-align: center;
+  width: 300px;
+  background: grey;
+  color: aliceblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+body {
+  background: azure;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article {
+  width: 900px;
+  margin: auto;
+}
+
+.static {
+  position: static; /* default*/
+}
+
+.relative {
+  position: relative;
+  bottom: 100px;
+}
