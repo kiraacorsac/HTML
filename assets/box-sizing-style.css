@@ -1,0 +1,16 @@
+.sized {
+  background-color: gray;
+  color: red;
+  /* max-width: 1000px;
+  min-width: 600px; */
+  width: 50%;
+  max-width: 750px;
+  height: 400px;
+  text-align: center;
+  margin: 0 auto;
+  overflow:auto;
+}
+
+body {
+  margin: 0;
+}
