@@ -1,0 +1,26 @@
+.colorful-text {
+  /* color: rgb(255, 0, 255);
+  color: #FF00FF; */
+}
+
+.underlay {
+  position: absolute;
+  top: 5px;
+  z-index: 3;
+  background-color: greenyellow;
+}
+
+.colorful-background {
+  position: relative;
+  background-color: rgba(255,0,0,0.5);
+  z-index: 1;
+}
+
+body {
+  background-color: rgb(0,0,255);
+  background-image: url("./images/coo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  margin: 0px;
+}

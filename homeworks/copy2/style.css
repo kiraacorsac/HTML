@@ -1,0 +1,98 @@
+body {
+  background: azure;
+  border: darkcyan 40px solid;
+  margin: 0px;
+  /* padding: 40px; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  background: darkcyan;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+
+  color: white;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 85%;
+  padding: 8px;
+  margin: auto;
+}
+
+.main {
+  padding: 0 20%;
+}
+
+h1 {
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  background: darkcyan;
+  width: 85%;
+  padding: 8px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin: auto;
+  top: 0px;
+  position: sticky;
+}
+
+.help {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  color: darkblue;
+  border: darkcyan solid;
+  height: 380px;
+  width: 250px;
+  background: lightcyan;
+  border-radius: 8px;
+}
+
+.help-header {
+  background: darkcyan;
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.msg {
+  margin: 8px;
+  border-radius: 20px;
+  padding: 16px;
+  color: white;
+}
+
+.new-msg {
+  position: absolute;
+  bottom: 4px;
+  right: 12px;
+  outline: none;
+  color: black;
+}
+
+.incoming-msg {
+  background: darkgreen;
+  border-bottom-left-radius: 0px;
+  margin-right: 40px;
+  text-align: left;
+}
+
+.outgoing-msg {
+  background: darkslategrey;
+  border-bottom-right-radius: 0px;
+  margin-left: 40px;
+  text-align: right;
+}
+
+.button {
+  position: absolute;
+  top: 0px;
+  right: 4px;
+}
+
