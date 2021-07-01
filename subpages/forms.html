@@ -19,15 +19,29 @@
       font-size: xx-small;
     }
 
-    input[type=checkbox]:checked{
-      visibility: hidden;
+    input[type=checkbox]:checked {
+      transform: rotate(10deg);
+      
     }
 
-    input[maxlength="3"]{
+    input[type=checkbox]::after {
+      content: 'v';
+      color: white;
+      font-weight: bold;
+      display: block;
+      width: 1em;
+      height: 1em;
+      background-color: red;
+      border-radius: 15%;
+    }
+
+    input[type=checkbox]:checked::after {
+      background-color: blue;
+    }
+
+    input[maxlength="3"] {
       border: red solid 1px;
     }
-    
-
   </style>
 </head>
 
