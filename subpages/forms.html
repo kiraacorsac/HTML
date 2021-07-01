@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .input-group {
+      display: flex;
+    }
+
+    .input-field {
+      width: 33%;
+    }
+
+    .input-field>label {
+      font-size: xx-small;
+    }
+
+    input[type=checkbox]:checked{
+      visibility: hidden;
+    }
+
+    input[maxlength="3"]{
+      border: red solid 1px;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <form action="mailto:filipkiraaopaleny@gmail.com">
+    <h3>Name</h3>
+
+    <div class="input-group">
+
+      <div class="input-field">
+        <input type="text" id="first-name">
+        <label for="first-name">First name</label>
+      </div>
+      <div class="input-field">
+        <input type="text" id="last-name">
+        <label for="last-name">Last name</label>
+      </div>
+    </div>
+    <label for="title">Title:</label>
+    <input type="text" maxlength="3" id="title">
+    <br>
+    <input type="text" maxlength="3" disabled>
+    <br>
+    <input type="text" placeholder="Name">
+    <br>
+    <input type="password" minlength="8">
+    <br>
+    <input type="number">
+    <br>
+    <input type="date">
+    <br>
+    <input type="email">
+    <br>
+    <input type="checkbox" name="select-multiple" checked>
+    <input type="checkbox" name="select-multiple">
+    <input type="checkbox" name="select-multiple">
+    <input type="checkbox" name="select-multiple">
+
+    <br>
+    <input type="button" value="Click me!">
+    <br>
+    <input type="submit" value="Send email!">
+    <br>
+    <input type="reset" value="Reset form!">
+    <br>
+    <input type="color">
+    <br>
+    <input type="file">
+    <br>
+    <input type="radio" name="gender" id="">
+    <input type="radio" name="gender" id="" checked>
+    <br>
+    <input type="radio" name="select-one" id="">
+    <input type="radio" id="">
+    <br>
+    <textarea rows="3" placeholder="longer text"></textarea>
+    <br>
+    <select>
+      <option>Czech Republic</option>
+      <option>Slovakia</option>
+      <option>Switzerlan</option>
+    </select>
+
+
+
+
+  </form>
+
+
+</body>
+
+</html>
