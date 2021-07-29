@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between;
+  flex-wrap: wrap; */
+  justify-content: flex-start;
+  border: 1px solid blue;
+  /* height: 400px; */
+}
+
+.last {
+  /* align-self: flex-end; */
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div {
+  border: 5px red solid;
+  min-height: 30px;
+  min-width: 30px;
+}
+
+.button:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.box {
+  border-color: black;
+}
+
+.left-aligned-container {
+  display: flex;
+  flex-direction: row;
+  /*default, don't need to write*/
+}
+
+.right-aligned-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tupperware {
+  border-color: green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  border-color: green;
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  min-width: 300px;
+}
+
+.right-pane {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  display: flex;
+}
+
+.middle-left {
+  min-width: 33%;
+}
+
+.middle-right {
+  min-width: 66%;
+
+}

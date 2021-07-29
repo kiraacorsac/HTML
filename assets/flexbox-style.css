@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: flex-end;
+  align-content: stretch;
+  height: 400px;
+  border: 1px solid red;
+}
+
+.content {
+  word-wrap: break-word;
+  border: black solid 1px;
+  height: 100px;
+  width: 400px;
+
+}
+
+.top-padding {
+  padding-top: 2em;
+}
+
+.big-text {
+  font-size: 4em;
+}
+
+.first {
+  order: -1;
+
+}
+
+.ordered {
+  order: -1;
+}
+
+.grow {
+  /* flex-grow: 1;
+  flex-shrinmk: 0; */
+  align-self: flex-start;
+}
+
+body {
+  margin: 0px;
+}
