@@ -1,18 +1,31 @@
 body {
   margin: 0;
-  font-family: Segoe UI,Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  background-color: #e1e4e8;
 }
 
 .header {
+  display: flex;
   background-color: #24292e;
   color: whitesmoke;
   font-weight: 600;
   font-size: 0.9rem;
+  padding: 5px 20px;
+}
+
+.header_box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #24292e;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 15px;
+  width: 100%;
 }
 
 .search-bar {
   background-color: #24292e;
-  
   border: solid 1px dimgray;
   border-radius: 5px;
 }
@@ -20,4 +33,46 @@ body {
 .header-button {
   color: whitesmoke;
   text-decoration: none;
+}
+
+.left_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 500px;
+}
+
+.right_box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100px;
+}
+
+.fa-github {
+  font-size: 2.5rem;
+}
+
+.left-panel {
+  background-color: white;
+  height: 100vh;
+  position: sticky;
+  top: 0px;
+  width: 348px;
+  flex-shrink: 0;
+  border-right: lightgray 1px solid;
+  padding: 26px;
+}
+
+.main {
+  display: flex;
+}
+
+.horizontal-ruler {
+  border-bottom: lightgray 1px solid;
+  margin: 10px 0px;
 }
