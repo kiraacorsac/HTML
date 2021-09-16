@@ -97,27 +97,122 @@
 
 
     let result = 0;
-    for( let i of array){
+    for (let i of array) {
       result += 1;
     }
 
     console.log("-----")
 
 
-    for(let i = 0; i < 10; i++){ // i++ is the same as i+=1
+    for (let i = 0; i < 10; i++) { // i++ is the same as i+=1
       console.log(i)
     }
 
     console.log("-----")
 
-    let i = 0;    
-    while(i < 10){
+    let i = 0;
+    while (i < 10) {
       console.log(i)
       i++;
     }
 
 
-    
+    let number = 69;
+    /*let answer = prompt("Guess the number?");
+    alert("Correct!");
+    alert("Too low!");
+    alert("Too high!");*/
+
+    let user = {
+      name: "Filip",
+      password: "password"
+    }
+
+    let laco = {
+      name: "Laco",
+      password: "123",
+    }
+
+    user.email = "wire150@gmail.com";
+
+    console.log(user.email);
+
+
+    console.log(user);
+
+    delete user.email;
+    console.log(user.email);
+
+
+    console.log(user.name);
+    console.log(user["name"]);
+
+    function makeUser(name, password) {
+      return {
+        name: name,
+        password: password
+      }
+    }
+
+    newUser = makeUser("Quentin", "QUI_");
+
+    car = {
+      tank: "80 liter",
+      roof: true,
+      engine: "2 liter",
+    }
+
+
+    console.log("isAdmin" in newUser);
+
+    console.log("tank" in car)
+
+    for (let key in car) {
+      console.log(key, car[key])
+    }
+
+    console.log(car["tank"]);
+
+
+    let animal = {
+      legs: 4
+    };
+
+    animal.name = "Kiraa";
+
+    animal.legs = 0;
+
+    console.log(animal)
+
+
+    let salariesObject = {
+      "David": 100,
+      "Michael": 200,
+      "John": 300,
+      "Trevor": 1,
+    }
+
+    function sumSalaries(salaries) {
+      let salaryResult = 0;
+      for (let employee in salaries) {
+        salaryResult += salaries[employee];
+        //console.log(salaries[employee]);
+      }
+      return salaryResult;
+    }
+
+    let salariesSumResult = sumSalaries(salariesObject)
+    console.log(salariesSumResult);
+
+    function isEmpty(obj) {
+      return false
+    }
+
+    console.log(isEmpty({})) // should return true
+    console.log(isEmpty(salariesObject)) //should return false
+
+
+
   </script>
 
   <script src="/assets/hello.js">
