@@ -205,13 +205,47 @@
     console.log(salariesSumResult);
 
     function isEmpty(obj) {
-      return false
+      for (let property in obj) {
+        return {
+          answer: false,
+          obj: obj
+        };
+      }
+      return {
+        answer: true,
+        obj: obj
+      };
     }
 
     console.log(isEmpty({})) // should return true
-    console.log(isEmpty(salariesObject)) //should return false
+    response = isEmpty({ name: "Filip" })
+    console.log(response.answer, response.obj) //should return false
 
+    let user_q = {
+      name: "Quentin"
+    }
+    let user2 = user_q;
+    user_q.name = "Filip"
+    console.log(user2.name);
+    console.log(user_q == user2);
 
+    function cloneObject(obj) {
+      let clone = {}
+      for (let key in obj) {
+        clone[key] = obj[key]
+      }
+      return clone
+    }
+
+    let animalDog = {
+      spiece: "dog",
+      legs: 4
+    }
+
+    let animalClone = cloneObject(animalDog);
+    console.log(animalClone == animalDog);
+
+    console.log(animalDog.spiece)
 
   </script>
 
