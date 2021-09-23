@@ -269,7 +269,7 @@
       //example: "soup, checken, fries"
     }
 
-    function menuAgreggator(menu1, menu2, menu2){
+    function menuAgreggator(menu1, menu2, menu2) {
       return // object, that is a menu, that has every single meals from every menu provided
       //example: {
       //  soup: 1,
@@ -280,6 +280,66 @@
       //  veal: 5
       //}
     }
+
+    let customer = {
+      name: "Quentin",
+      itemsPurchased: 0,
+      purchaseItem() {
+        console.log("Purchasing an item!")
+        this.itemsPurchased += 1;
+      }
+    }
+
+    console.log(customer.itemsPurchased);
+    customer.purchaseItem()
+    console.log(customer.itemsPurchased)
+
+
+    class Customer {
+      constructor(name) {
+        this.name = name;
+        this.itemsPurchased = 0;
+      }
+
+      welcome() {
+        console.log("welcome,", this.name)
+      }
+
+      purchaseItem() {
+        console.log(this.name, "purchasing an item!")
+        this.itemsPurchased += 1;
+      }
+    }
+
+    let customerQuentin = new Customer("Quentin");
+    customerQuentin.welcome();
+    customerQuentin.purchaseItem();
+
+    let customerJuraj = new Customer("Juraj");
+    customerJuraj.welcome();
+
+
+    class Ladder {
+      // property: currentStep
+      // property: numberOfSteps
+      // method: up() - increases currentStep (warning about reaching the top)
+      // method: down() - deacreases currentStep (warned about reaching bottom)
+      // method: fall() - sets current step to 0
+    }
+
+    let ladder = new Ladder(4)
+    ladder.up();
+    ladder.up();
+    ladder.up();
+
+    console.log(ladder.currentStep); // 3
+    ladder.down()
+    console.log(ladder.currentStep) // 2
+    ladder.fall()
+    console.log(ladder.currentStep) // 0
+    // HW: ladder
+
+
 
   </script>
 
