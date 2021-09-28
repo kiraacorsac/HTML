@@ -320,15 +320,75 @@
 
 
     class Ladder {
-      // property: currentStep
-      // property: numberOfSteps
-      // method: up() - increases currentStep (warning about reaching the top)
-      // method: down() - deacreases currentStep (warned about reaching bottom)
-      // method: fall() - sets current step to 0
+      constructor(numberOfSteps) {
+        this.numberOfSteps = numberOfSteps;
+        this.currentStep = 0;
+      }
+      up() {
+
+        if (this.currentStep >= this.numberOfSteps) {
+          throw Error("You're out of steps.")
+
+        }
+
+        this.currentStep += 1;
+        console.log("Stepping up to the step", this.currentStep)
+        if (this.currentStep == this.numberOfSteps) {
+          console.log("You`ve reached the top")
+        }
+      }
+      down() {
+
+        if (this.currentStep <= 0) {
+          throw Error("You're on the ground.")
+
+        }
+        this.currentStep = this.currentStep - 1;
+        console.log("Stepping down to the step", this.currentStep);
+
+      }
+
+      fall() {
+
+        this.currentStep = 0;
+
+      }
     }
 
     let ladder = new Ladder(4)
-    ladder.up();
+
+    function userStep(ladder) {
+      while (true) {
+        let direction = prompt("Direction?")
+        if (direction == "up") {
+          ladder.up()
+        } else {
+          ladder.down()
+        }
+      }
+    }
+
+    try {
+      //userStep(ladder);
+      // throw Error("Random error!")
+      // thisVariableDoesNotExist;
+    } catch (error) {
+     
+      if (error instanceof ReferenceError) {
+        alert("Ref error!")
+      } else {
+        alert("I don't know what to do with this, but it's better then trowing it up")
+      }
+
+    }
+
+
+
+    console.log(ladder instanceof Ladder)
+
+
+
+    /* ladder.up();
     ladder.up();
     ladder.up();
 
@@ -336,10 +396,28 @@
     ladder.down()
     console.log(ladder.currentStep) // 2
     ladder.fall()
-    console.log(ladder.currentStep) // 0
+    console.log(ladder.currentStep) // 0*/
     // HW: ladder
 
+    try {
+      console.log("start");
+      console.log(thisVariableDoesNotExist);
+      console.log("end");
+    } catch (error) {
+      console.log("An error was handled!");
+      console.log(error.message)
+      //console.error(error)
+    }
 
+    console.log("continue")
+
+
+    function divide(a, b){
+      // throw if a or b are not numbers
+      // throw if b is 0
+
+      return a/b;
+    }
 
   </script>
 
