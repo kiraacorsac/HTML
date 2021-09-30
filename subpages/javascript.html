@@ -373,7 +373,7 @@
       // throw Error("Random error!")
       // thisVariableDoesNotExist;
     } catch (error) {
-     
+
       if (error instanceof ReferenceError) {
         alert("Ref error!")
       } else {
@@ -412,16 +412,27 @@
     console.log("continue")
 
 
-    function divide(a, b){
+    function divide(a, b) {
       // throw if a or b are not numbers
       // throw if b is 0
 
-      return a/b;
+      return a / b;
+    }
+
+
+    // use this function, and let the user know via alert about any errors, don't forget to rethrow
+    function passwordValidator(password) {
+      // throw "PasswordTooShortError" if password length is less then 6
+      // (advanced - you'll need to google stuff) throw "NoUppercaseCharacters"
+
+      return true;
     }
 
   </script>
 
   <script src="/assets/hello.js">
+  </script>
+  <script src="/assets/division.js">
   </script>
 </body>
 
